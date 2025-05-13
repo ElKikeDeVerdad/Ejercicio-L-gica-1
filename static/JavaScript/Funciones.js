@@ -96,6 +96,9 @@ function datosPersonasInfectadas() {
     if (persona.infected) datosPerInfect.push(persona);
   }
   return datosPerInfect;
+
+
+  
 }
 
 console.log("Personas Infectadas", datosPersonasInfectadas);

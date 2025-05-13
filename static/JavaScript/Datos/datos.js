@@ -1,3 +1,15 @@
 export const enunciadosExercicios = {
-    exercicio14: `Ejercicio 14: el numero total de infectados de paises con personas que tienen mascotas con 8 patas es: `
+    exercicio1:`Ejercicio 1 - Número de persoas infectadas: ` ,
+    ejercicio2:`Ejercicio 2 - Número de persoas non infectadas:  `,
+    ejercicio3:`Exercicio 3 - Número de persoas infectadas nos países do array:  `,
+    ejercicio4:`Ejercicio 4 - El pais con mas infectados es: `,
+    ejercicio5:`Ejercicio 5 - Nombre de las mascotas: `,
+    ejercicio6:`Ejercicio 6 - Personas Infectadas: `,
+    ejercicio7:`Ejercicio 7 - Personas españolas con perro`,
+    ejercicio8:`Ejercicio 8 - Personas con los datos de su mascota: `,
+    ejercicio9:`Ejercicio 9 - El animal que mas personas tienen es: `,
+    ejercicio10:`Ejercicio 10 - El numero total de patas de las mascotas es: `,
+    ejercicio11:`Ejercicio 11 - Las personas que tienen mascotas que tienen 4 patas son: `,
+    ejercicio13:`Ejercicio 13 - Los paises que tienen personas con loro son: `,
+    exercicio14:`Ejercicio 14 - El numero total de infectados de paises con personas que tienen mascotas con 8 patas es: `,
 }

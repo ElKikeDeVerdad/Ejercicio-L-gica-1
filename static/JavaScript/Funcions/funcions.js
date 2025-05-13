@@ -3,7 +3,7 @@ function mostrarResultado(ejercicio, resultado) {
   const parrafo = document.createElement("p");
   
   parrafo.innerHTML = `${ejercicio} ${resultado}`;// `${ejercicio} ${resultado}`
-  console.log("parrafo ",parrafo)
+  console.log("parrafo ",parrafo) /** se puede borrar */
   contenedor.append(parrafo);
   document.body.append(contenedor);
 }

@@ -17,76 +17,42 @@ import {
 } from "./Funciones.js";
 import { mostrarResultado } from "./Funcions/funcions.js";
 
-const numAfectadosExer1 = numAfectados();
-console.log("Exercicio 1: Número de persoas infectadas ", numAfectadosExer1);
-mostrarResultado("Ejercicio 1 - Número de persoas infectadas", numAfectadosExer1);;
+/**Ejercicio 1 */
+mostrarResultado(enunciadosExercicios.exercicio1, numAfectados());
 
-const numPersoasSanasExer2 = numPersoasSanas();
-console.log(
-  "Exercicio 2: Número de persoas non infectadas ",
-  numPersoasSanasExer2
-);
+/**Ejercicio 2 */
+mostrarResultado(enunciadosExercicios.ejercicio2, numPersoasSanas());
 
-const numPersoasInfectadasPorPais = numPersoasInfectadasPais();
-console.log(
-  "Exercicio 3: Número de persoas infectadas nos países do array ",
-  numPersoasInfectadasPorPais
-);
+/**Ejercicio 3 */
+mostrarResultado(enunciadosExercicios.ejercicio3, numPersoasInfectadasPais());
 
-const paisMasInfectadoEjercicio4 = mayorPaisInfectado();
-console.log("Ejercicio 4: Mayor Pais Infectado", paisMasInfectadoEjercicio4);
+/**Ejercicio 4 */
+mostrarResultado(enunciadosExercicios.ejercicio4, mayorPaisInfectado());
 
-const nombreMascotaEjercicio5 = nombreMascota();
-console.log("Ejercicio 5: Nombre de las mascotas", nombreMascotaEjercicio5);
+/**Ejercicio 5 */
+mostrarResultado(enunciadosExercicios.ejercicio5, nombreMascota());
 
-const datosPersonasInfectadasEjercicio6 = datosPersonasInfectadas();
-console.log(
-  "Ejercicio 6: Personas Infectadas",
-  datosPersonasInfectadasEjercicio6
-);
+/**Ejercicio 6*/
+mostrarResultado(enunciadosExercicios.ejercicio6, datosPersonasInfectadas());
 
-const EspañolesPerroEjercicio7 = datosEspañolesPerro();
-console.log(
-  "Ejercicio 7: personas españolas con perro",
-  EspañolesPerroEjercicio7
-);
+/**Ejercicio 7 */
+mostrarResultado(enunciadosExercicios.ejercicio7, datosEspañolesPerro());
 
-const PersonasYMascotaEjercicio8 = PersonasConMascota();
-console.log(
-  "Ejercicio 8: personas con los datos de su mascota:",
-  PersonasYMascotaEjercicio8
-);
+/**Ejercicio 8 */
+mostrarResultado(enunciadosExercicios.ejercicio8, PersonasConMascota());
 
-const masPersonasMascotaEjercicio9 = masCantidadMascota();
-console.log(
-  "Ejercicio 9: el animal que mas personas tienen es",
-  masPersonasMascotaEjercicio9
-);
+/**Ejercicio 9 */
+mostrarResultado(enunciadosExercicios.ejercicio9, masCantidadMascota());
 
-const todasPatasMascotas = totalPatasMascota();
-console.log(
-  "Ejercicio 10: el numero total de patas de las mascotas es: ",
-  todasPatasMascotas
-);
+/**Ejercicio 10 */
+mostrarResultado(enunciadosExercicios.ejercicio10, totalPatasMascota());
 
-const personasAnimalesCuatroPatas = mascotaCuatroPatas();
-console.log(
-  "Ejercicio 11: las personas que tienen mascotas que tienen 4 patas son: ", personasAnimalesCuatroPatas
-);
+/**Ejercicio 11 */
+mostrarResultado(enunciadosExercicios.ejercicio11, mascotaCuatroPatas()) ;
 
-const personasLoroPaisNombre = loroPersona();
-console.log(
-  "Ejercicio 13: los paises que tienen personas con loro son: ", personasLoroPaisNombre
-)
+/**Ejercicio 13 */
+mostrarResultado(enunciadosExercicios.ejercicio13, loroPersona());
 
-const totalInfectadosPaisesPorMascota = infectadosPaisPorAnimal();
-
-
--
-
-
-
-
-
-mostrarResultado(enunciadosExercicios.exercicio14,totalInfectadosPaisesPorMascota)
+/**Ejercicio 14 */
+mostrarResultado(enunciadosExercicios.exercicio14,infectadosPaisPorAnimal())
   
