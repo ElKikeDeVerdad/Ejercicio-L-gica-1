@@ -11,6 +11,8 @@ export {
   masCantidadMascota,
   totalPatasMascota,
   mascotaCuatroPatas,
+  loroPersona,
+  infectadosPaisPorAnimal,
 };
 
 //*Ejercicio 1*//
@@ -268,7 +270,6 @@ function mascotaCuatroPatas() {
     for(let mascota of pets){
       if (persona.pet === mascota.name){
         let tipo = mascota.type;
-        /* let nombreMascota = persona.name; */
 
         for(let animales of animals){
           if(tipo === animales.kind){
@@ -289,5 +290,55 @@ function mascotaCuatroPatas() {
 
 
 //*Ejercicio 12*//
+/** Este ejercicio no se puede */
+
 //*Ejercicio 13*//
+function loroPersona() {
+  let personasLoroPais = [];
+
+  for (let persona of persons) {
+    for (let mascota of pets) {
+      if (persona.pet === mascota.name && mascota.type === "loro") {
+        for (let pais of countries) {
+          if (persona.country === pais.code) {
+            // Evitar duplicados (opcional)
+            if (!personasLoroPais.includes(pais.name)) {
+              personasLoroPais.push(pais.name);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  return personasLoroPais;
+}
+
+
+
 //*Ejercicio 14*//
+function infectadosPaisPorAnimal() {
+  let infectadosTotales = 0;
+
+  for (let persona of persons) {
+    for (let mascota of pets) {
+      if (persona.pet === mascota.name) {
+        let tipo = mascota.type;
+
+        for (let animal of animals) {
+          if (tipo === animal.kind && animal.legs === 8) {
+            for (let pais of countries) {
+              if (persona.country === pais.code) {
+                infectadosTotales += pais.infected;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  return infectadosTotales;
+}
+  
+

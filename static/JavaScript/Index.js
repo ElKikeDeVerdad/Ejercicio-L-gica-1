@@ -10,11 +10,14 @@ import {
   masCantidadMascota,
   totalPatasMascota,
   mascotaCuatroPatas,
-  
+  loroPersona,
+  infectadosPaisPorAnimal,
+
 } from "./Funciones.js";
 
 const numAfectadosExer1 = numAfectados();
 console.log("Exercicio 1: Número de persoas infectadas ", numAfectadosExer1);
+mostrarResultado("Ejercicio 1 - Número de persoas infectadas", numAfectadosExer1);;
 
 const numPersoasSanasExer2 = numPersoasSanas();
 console.log(
@@ -68,3 +71,25 @@ const personasAnimalesCuatroPatas = mascotaCuatroPatas();
 console.log(
   "Ejercicio 11: las personas que tienen mascotas que tienen 4 patas son: ", personasAnimalesCuatroPatas
 );
+
+const personasLoroPaisNombre = loroPersona();
+console.log(
+  "Ejercicio 13: los paises que tienen personas con loro son: ", personasLoroPaisNombre
+)
+
+const totalInfectadosPaisesPorMascota = infectadosPaisPorAnimal();
+console.log(
+  "Ejercicio 14: el numero total de infectados de paises con personas que tienen mascotas con 8 patas es: ", totalInfectadosPaisesPorMascota
+)
+
+
+const contenedor = document.createElement("div");
+document.body.append(contenedor);
+
+
+function mostrarResultado(titulo, resultado) {
+  const parrafo = document.createElement("p");
+  parrafo.innerHTML = titulo, resultado;
+  contenedor.append(parrafo);
+}
+  
