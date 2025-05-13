@@ -1,3 +1,4 @@
+import { enunciadosExercicios } from "./Datos/datos.js";
 import {
   numAfectados,
   numPersoasInfectadasPais,
@@ -14,6 +15,7 @@ import {
   infectadosPaisPorAnimal,
 
 } from "./Funciones.js";
+import { mostrarResultado } from "./Funcions/funcions.js";
 
 const numAfectadosExer1 = numAfectados();
 console.log("Exercicio 1: Número de persoas infectadas ", numAfectadosExer1);
@@ -78,18 +80,13 @@ console.log(
 )
 
 const totalInfectadosPaisesPorMascota = infectadosPaisPorAnimal();
-console.log(
-  "Ejercicio 14: el numero total de infectados de paises con personas que tienen mascotas con 8 patas es: ", totalInfectadosPaisesPorMascota
-)
 
 
-const contenedor = document.createElement("div");
-document.body.append(contenedor);
+-
 
 
-function mostrarResultado(titulo, resultado) {
-  const parrafo = document.createElement("p");
-  parrafo.innerHTML = titulo, resultado;
-  contenedor.append(parrafo);
-}
+
+
+
+mostrarResultado(enunciadosExercicios.exercicio14,totalInfectadosPaisesPorMascota)
   
